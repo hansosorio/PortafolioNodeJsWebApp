@@ -1,0 +1,13 @@
+extends layout
+
+block header
+  h1 All Portfolios
+  h4 Feel free to click on each one!
+
+block content
+  ul.list
+    each portfolio, i in portfolios
+      li
+        - const {image_url, idportfolio, username} = portfolio
+        a(href='/portfolio/' + idportfolio)
+          img(src=image_url alt=username)

@@ -1,0 +1,25 @@
+extends layout
+
+block header
+  a(href='/')
+    h3 Go Back
+
+block content
+  - const {image_url, idportfolio, username, description} = profile
+  div.profile
+    .leftside
+      img(src=image_url alt=username)
+      h1= username
+      if tweets
+        .containertimelines
+          each tweet, i in tweets
+            .timeline
+              .leftside
+                img(src=tweet.user.profile_image_url_https alt=tweet.user.name)
+              .rightside
+                h2= tweet.user.name
+                p= tweet.text
+    .righside
+      h2= username
+      h3 Description
+      h4= description
