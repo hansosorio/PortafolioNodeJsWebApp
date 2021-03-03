@@ -35,7 +35,7 @@
     "aws-sdk": "^2.714.0",
     "axios": "^0.19.2",
     "express": "^4.17.1",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "twitter": "^1.7.1"
   },
   "devDependencies": {
