@@ -33,7 +33,7 @@
   "homepage": "https://github.com/hansosorio/PortafolioNodeJsWebApp#readme",
   "dependencies": {
     "aws-sdk": "^2.714.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.2"
     "express": "^4.17.1",
     "pug": "^3.0.0",
     "twitter": "^1.7.1"
